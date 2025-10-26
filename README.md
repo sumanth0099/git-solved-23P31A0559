@@ -3,60 +3,55 @@
 A comprehensive CI/CD configuration management tool for enterprise deployments.
 
 ## Project Status
-- **Version**: 1.0.0 (Production), 2.0.0-beta (Development)
-- **Environments**: Production & Development
+- **Version**: 1.0.0 (Production), 2.0.0-beta (Development), 3.0.0-experimental (AI/Testing)
+- **Environments**: Production, Development, Experimental
 - **Student**: Tetala Sumanth Reddy
 - **Student ID**: 23P31A0559
-
-**Version**: 1.0.0  
-**Environment**: Production  
-**Maintainer**: DevOps Team
+- **Maintainers**: DevOps Team (Production/Development), DevOps Innovation Team (Experimental)
 
 ---
 
-### Development Version (Optional / Beta)
-
-**Version**: 2.0.0-beta  
-**Environment**: Development  
-**Maintainer**: DevOps Team
-
-#### New Features (In Development)
-- 🚀 Kubernetes orchestration support
-- 🔄 Advanced blue-green deployment
-- 📊 Enhanced monitoring dashboard
-- 🔐 OAuth2 authentication
-- 🐳 Docker Compose integration
-- **NEW**: Multi-cloud support (AWS, Azure, GCP)
-- **NEW**: Slack/Discord notifications
-
 ## Features
+
+### Core Features
 - Automated deployment scripts
 - Real-time monitoring
 - Configuration management
 - Backup and recovery system
 
+### Production Features
+- SSL/TLS encryption
+- Auto-scaling
+- Load balancer integration
+- Scheduled backups
+
+### Development Features (Beta)
+- Docker Compose integration
+- Hot reload enabled
+- Debug mode active
+- Enhanced logging
+- Mock external APIs
+- Kubernetes orchestration support (optional)
+- Advanced blue-green deployment (optional)
+- Enhanced monitoring dashboard
+- OAuth2 authentication
+- Multi-cloud support (AWS, Azure, GCP)
+- Slack/Discord notifications
+
+### Experimental / AI Features
+- 🤖 AI-powered deployment optimization
+- 🌐 Multi-cloud orchestration (AWS, Azure, GCP, DigitalOcean)
+- 📈 Predictive scaling with machine learning
+- 🔒 Zero-trust security architecture
+- 🌊 Event-driven architecture
+- 🎯 Chaos engineering tools
+- AI-powered anomaly detection and configuration suggestions
+
 ---
 
-## Quick Start (Production)
-1. Clone the repository
-2. Configure environment variables
-3. Run deployment script
-4. Monitor system health
+## Quick Start
 
-## Quick Start (Development)
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Configure environment variables
-4. Run in development mode: `npm run dev`
-5. Access dashboard at http://localhost:3000
-
-## Development Setup
+### Production Mode
 ```bash
-# Install dependencies
-npm install
-
-# Run tests
-npm test
-
-# Start development server
-npm run dev
+export DEPLOY_ENV=production
+./scripts/deploy.sh
